@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=keywords content="Управление проектами, сертификация, смс">
+    <title>HTML learn</title>
+</head>
+<body>
+    <h1>Привет народ</h1>
+    <p>Ты уже видел это замечательное <a target='_blank' href="https://www.youtube.com"> видео</a>
+    На Ютуб? </p>
+    <section>
+    <h2>Cat photos</h2>
+    <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallaery</p>
+   <a href="https://freecatphotoapp.com"> <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back"> </a>
+    </section>
+    <section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ul>
+            <li>cat nip</li>
+            <li>laser pointers</li>
+            <li>lasangna</li>
+        </ul>
+        <figure>
+              <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+              <figcaption>Cats <em>love</em> lasagna.</figcaption>
+        </figure>
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+            <li>flef treatment</li>
+            <li>thunder</li>
+            <li>other cats</li>    
+        </ol>
+        <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+            <figcaption>Cats <strong>hate</strong> other cats.</figcaption> <!--Figcaption это подпись для картинки-->
+        </figure>
+    </section>
+    <section> <!-- section - это как новый блок\раздел где группируется содержимое -->
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo"></form> 
+          <!-- form - передает данные введерные ниже от пользорвателя на сервер который указывается в атрибуте action -->
+        <fieldset> <
+          <!-- помещает указанные ниже кнопки в визуальное поле\рамкку с отступами со всех сторон -->
+          <legend>Is your cat an indoor or outdoor cat? </legend>
+         <label for="Indoor"> <input name="Indoor-Outdoor" value="Indoor" id="Indoor" type="radio" checked> Indoor</label>
+        <!-- label - делает элемент формы кликабельным, атрибут for - идентификатор элемента с которым следует установить связь  -->
+        <!-- input определяет пользовательское поле длля ввода информации. 
+          Type - принимает различный вид информации например
+           type="text" создаст поле вооде текста. Type="radio" - создает радио кнопки 
+          id - нужен для взаимодействия с lable
+          value - задает значение элемента
+          name - создает имя формы, что бы обработчик мог его идентифицировать -->
+         <label for="Outdoor"> <input name="Indoor-Outdoor" value="Outdoor" id="Outdoor" type="radio" > Outdoor</label>
+        </fieldset><br>
+        <fieldset>
+          <legend>What's your cat's personality?</legend>
+         <input type="checkbox" name="personality" id="loving" value="loving"  checked> <label for="loving" >Loving</label>
+         <input type="checkbox" name="personality" id="lazy" value="lazy"> <label for="lazy">Lazy</label>
+         <!-- все что в input это флажок checkbox c id определяющим его и name для сервера--> 
+         <!-- label это и сам видимый текст и возможность его соединить с checkbox атрибутом for-->
+         <input type="checkbox" name="personality" id="energetic" value="energetic"> <label for="energetic">Energetic</label>
+        </fieldset><br>
+        имя:<input type="text" placeholder="cat url" name="catphotourl" required><br>
+        <button type="submit">Submit</button>
+    </section>
+    <footer>
+      <p>No Copyright - <a href="https://www.freecodecamp.org"> freeCodeCamp.org</a> </p>
+    </footer>
+
+</body>
+</html>
